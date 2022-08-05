@@ -3,7 +3,7 @@ const app = express()
 const MongoClient = require('mongodb').MongoClient
 require('dotenv').config()
 const connectionString = process.env.connectionString
-const PORT = 2121
+const PORT = process.env.PORT || 2121
 
 let db,
     dbName = 'listAppdb',
