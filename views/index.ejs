@@ -24,8 +24,8 @@
     <section class="enter-list">
     <h2>Find List </h2>
     <form action="/getList"  method="POST">
-        <input type="text" placeholder="LIST ID" name="listID">
-        <input type="submit">
+        <input type="text" placeholder="ENTER LIST ID" name="listID">
+        <input type="submit" value="Find List">
     </form>
 
             <% if (listID) { %>
@@ -37,7 +37,7 @@
     <section class="new-list">
     <h2>Create new List</h2>
     <form action="/newList" method="POST">
-        <input type="submit" placeholder="New List">
+        <input type="submit" placeholder="New List" value="Create">
     </form>
     </section>
 
