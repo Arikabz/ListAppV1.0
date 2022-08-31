@@ -9,9 +9,9 @@ List application thought out to make shopping and daily activities more friction
 
 **Tech used:** HTML, CSS, JavaScript, Express as framework for Node.js and MongoDB.
 
+Using Express as a framework for Node.js, a server is set to listen to CRUD requests. On the front end, JS code sends those requests using async functions, event listeners and selecting pieces of text in the DOM. When a list is requested by submitting a list ID, an EJS template gets rendered including all of the elements of that particular list, which is identified by six random uppercase letters.
 
 ## Optimizations
-*(optional)*
 
 Items with more than one word don't have 'mark done' functionality. It's a matter of how the request is sent from the front end to back end, as js reads the text in the current rendered template and sends it as a request to the server, targeted by element type. Perhaps making it identify it by class or id would work best, but time constraints have held me up on implementing it. 
 Another aspect I would like to improve is the presentation (CSS), as currently it is very basic. Perhaps utilizing a framework like Tailwind could help speed up the process. 
